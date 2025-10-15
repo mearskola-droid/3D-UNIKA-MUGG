@@ -11,70 +11,106 @@
   <div class="quiz-container">
     <h1>☕ Skapa din snurrande 3D-mugg ✨</h1>
     <form id="quizForm">
-      <label>Favoritfärg:</label>
-      <select id="color">
-        <option value="#ffadad">Röd (pastell)</option>
-        <option value="#ffd6a5">Orange</option>
-        <option value="#fdffb6">Gul</option>
-        <option value="#caffbf">Grön</option>
-        <option value="#9bf6ff">Blå</option>
-        <option value="#bdb2ff">Lila</option>
-        <option value="#ffc6ff">Rosa</option>
-        <option value="#ffffff">Vit</option>
-        <option value="#d3d3d3">Svart (ljusgrå)</option>
-      </select>
+      <div>
+        <label>Favoritfärg:</label><br>
+        <select id="color">
+          <option value="#ffadad">Röd (pastell)</option>
+          <option value="#ffd6a5">Orange</option>
+          <option value="#fdffb6">Gul</option>
+          <option value="#caffbf">Grön</option>
+          <option value="#9bf6ff">Blå</option>
+          <option value="#bdb2ff">Lila</option>
+          <option value="#ffc6ff">Rosa</option>
+          <option value="#ffffff">Vit</option>
+          <option value="#d3d3d3">Svart (ljusgrå)</option>
+        </select>
+      </div>
 
-      <label>Favoritdjur:</label>
-      <select id="animal">
-        <option>katt</option>
-        <option>hund</option>
-        <option>häst</option>
-        <option>fisk</option>
-        <option>fågel</option>
-        <option>bläckfisk</option>
-      </select>
+      <div>
+        <label>Favoritdjur:</label><br>
+        <select id="animal">
+          <option>katt</option>
+          <option>hund</option>
+          <option>häst</option>
+          <option>fisk</option>
+          <option>fågel</option>
+          <option>bläckfisk</option>
+        </select>
+      </div>
 
-      <label>Favoritblomma:</label>
-      <select id="flower">
-        <option>solros</option>
-        <option>tulpaner</option>
-        <option>vallmo</option>
-        <option>ros</option>
-        <option>blåsippor</option>
-        <option>dont forget me</option>
-      </select>
+      <div>
+        <label>Favoritblomma:</label><br>
+        <select id="flower">
+          <option>solros</option>
+          <option>tulpaner</option>
+          <option>vallmo</option>
+          <option>ros</option>
+          <option>blåsippor</option>
+          <option>dont forget me</option>
+        </select>
+      </div>
 
-      <label>Favoritmat:</label>
-      <select id="food">
-        <option>steak</option>
-        <option>pommes</option>
-        <option>köttbullar</option>
-        <option>pata</option>
-      </select>
+      <div>
+        <label>Favoritmat:</label><br>
+        <select id="food">
+          <option>steak</option>
+          <option>pommes</option>
+          <option>köttbullar</option>
+          <option>pata</option>
+        </select>
+      </div>
 
-      <label>Favoritdricka:</label>
-      <select id="drink">
-        <option>schoklad</option>
-        <option>kaffe</option>
-        <option>milkshake</option>
-        <option>jordgubbmjölk</option>
-        <option>vin</option>
-        <option>öl</option>
-      </select>
+      <div>
+        <label>Favoritdricka:</label><br>
+        <select id="drink">
+          <option>schoklad</option>
+          <option>kaffe</option>
+          <option>milkshake</option>
+          <option>jordgubbmjölk</option>
+          <option>vin</option>
+          <option>öl</option>
+        </select>
+      </div>
 
-      <label>Favoritinstrument:</label>
-      <select id="instrument">
-        <option>fiol</option>
-        <option>saxofon</option>
-        <option>piano</option>
-        <option>gitarr</option>
-        <option>trummor</option>
-        <option>triangel</option>
-      </select>
+      <div>
+        <label>Favoritinstrument:</label><br>
+        <select id="instrument">
+          <option>fiol</option>
+          <option>saxofon</option>
+          <option>piano</option>
+          <option>gitarr</option>
+          <option>trummor</option>
+          <option>triangel</option>
+        </select>
+      </div>
 
-      <label>Favorit-sweet:</label>
-      <select id="sweet">
-        <option>glass</option>
-        <option>schoklad</option>
-        <option>kanelbullar</option>
-        <option>kokos bollar</o
+      <div>
+        <label>Favorit-sweet:</label><br>
+        <select id="sweet">
+          <option>glass</option>
+          <option>schoklad</option>
+          <option>kanelbullar</option>
+          <option>kokos bollar</option>
+          <option>godis</option>
+          <option>gott och blandat</option>
+          <option>kladdkaka</option>
+        </select>
+      </div>
+
+      <br>
+      <button type="submit">✨ Visa min snurrande mugg ✨</button>
+    </form>
+
+    <div id="mug-container" class="hidden">
+      <div id="mug">
+        <div class="inner"></div>
+        <div class="emojis"></div>
+      </div>
+      <button id="downloadBtn">📸 Ladda ner mugg</button>
+      <button id="resetBtn">🔁 Gör om quizet</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
